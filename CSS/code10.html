@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(20, 20, 42);
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(86, 86, 102);
+        color: white;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 10px;
+      }
+      .list {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+      /* heroSection  */
+      .heroSection {
+        height: 80vh;
+        /* background-color: red; */
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+      }
+      button:hover {
+        color: black;
+        background-color: white;
+      }
+      .heroSection img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+      /* .cardSection */
+      .cardSection {
+      }
+      .cardSection h1 {
+        text-align: center;
+      }
+      .empty {
+        width: 300px;
+        height: 4px;
+        background-color: rgb(237, 234, 234);
+
+        margin: auto;
+        border-radius: 50%;
+      }
+      .cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      .card {
+        width: 250px;
+        border: 2px solid rgb(241, 238, 238);
+        padding-bottom: 20px;
+        text-align: center;
+        border-radius: 12px;
+      }
+
+      .cardImage {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+      }
+      footer {
+        background-color: rgb(42, 39, 39);
+        color: white;
+        padding: 20px;
+      }
+      footer p {
+        text-align: center;
+        padding: 20px;
+      }
+      .footer {
+        margin-top: 50px;
+        height: 180px;
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footerText {
+        width: 250px;
+      }
+      input {
+        padding: 10px;
+        border-radius: 20px 0 0 20px;
+        outline: none;
+      }
+      .inputBtn {
+        border-radius: 0 20px 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">LOGO</div>
+      <ul class="list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Projects</li>
+      </ul>
+    </nav>
+    <!-- heroSection  -->
+    <div class="heroSection">
+      <div>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam harum
+          veritatis tempore dicta enim, repellat ipsa itaque quaerat doloribus
+          porro, facere dolorem eaque eveniet voluptates commodi maiores,
+          dolores corporis libero!
+        </p>
+        <button>Click me</button>
+      </div>
+
+      <!-- image  -->
+      <img src="../image.png" alt="" />
+    </div>
+
+    <!-- cardSection -->
+    <div class="cardSection">
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <div class="empty"></div>
+      <div class="cards">
+        <!-- firstCard -->
+        <div class="card">
+          <img class="cardImage" src="../image.png" alt="" />
+          <div>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              assumenda iusto nulla?
+            </p>
+            <a href="#">link...</a>
+          </div>
+        </div>
+
+        <!-- secondCard -->
+        <div class="card">
+          <img class="cardImage" src="../image.png" alt="" />
+          <div>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              assumenda iusto nulla?
+            </p>
+            <a href="#">link...</a>
+          </div>
+        </div>
+
+        <!-- thirdCard -->
+        <div class="card">
+          <img class="cardImage" src="../image.png" alt="" />
+          <div>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              assumenda iusto nulla?
+            </p>
+            <a href="#">link...</a>
+          </div>
+        </div>
+        <!-- finish -->
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+      <div class="footer">
+        <div class="footerText">
+          <h3>Lorem ipsum dolor sit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            fugiat quas nobis eveniet laboriosam dolorum facilis, vero adipisci
+            voluptatum itaque nisi hic veniam expedita ullam, doloribus
+            voluptates earum facere possimus!
+          </p>
+        </div>
+
+        <div>
+          <h3>import Links</h3>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Projects</li>
+          </ul>
+        </div>
+        <div>
+          <h3>import Links</h3>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Projects</li>
+          </ul>
+        </div>
+
+        <div>
+          <input type="text" />
+          <button class="inputBtn">click me</button>
+        </div>
+        <hr />
+      </div>
+      <hr />
+      <p>Lorem ipsum dolor sit amet.</p>
+    </footer>
+  </body>
+</html>
